@@ -51,12 +51,12 @@ public class Main {
                           .max(Comparator.comparing(Cliente::getCompras)).get().getNome();
                 int cliMaior = addcliente.getClientesList().stream()
                         .max(Comparator.comparing(Cliente::getCompras)).get().getCompras();
-                System.out.println("O cliente: " + maior + " teve o maior número de compras: " + cliMaior);
+                System.out.println("O cliente " + maior + " teve o maior número de compras: " + cliMaior);
                 String menor = addcliente.getClientesList().stream()
                           .min(Comparator.comparing(Cliente::getCompras)).get().getNome();
                 int cliMenor = addcliente.getClientesList().stream()
                         .min(Comparator.comparing(Cliente::getCompras)).get().getCompras();
-                System.out.println("O cliente: " + menor + " teve o menor número de compras: " + cliMenor);
+                System.out.println("O cliente " + menor + " teve o menor número de compras: " + cliMenor);
 
                 break;
             case 0:
